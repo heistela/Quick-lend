@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickLoan - Fast & Easy Loans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h2>QuickLoan</h2>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#calculator">Calculator</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Fast. Reliable. Loans.</h1>
+  <p>Get instant loan approvals with low interest rates.</p>
+  <button onclick="document.getElementById('contact').scrollIntoView()">Apply Now</button>
+</section>
+
+<section class="section services" id="services">
+  <h2>Our Loan Services</h2>
+  <div class="card">
+    <h3>Personal Loans</h3>
+    <p>Flexible repayment terms for your personal needs.</p>
+  </div>
+  <div class="card">
+    <h3>Business Loans</h3>
+    <p>Support for your business growth and working capital.</p>
+  </div>
+  <div class="card">
+    <h3>Home Loans</h3>
+    <p>Low-interest loans to help you buy your dream home.</p>
+  </div>
+</section>
+
+<section class="section calculator" id="calculator">
+  <h2>Loan Calculator</h2>
+  <p>Estimate your monthly payments</p>
+  <input type="number" placeholder="Loan Amount ($)" />
+  <input type="number" placeholder="Interest Rate (%)" />
+  <input type="number" placeholder="Loan Term (Years)" />
+  <button>Calculate</button>
+</section>
+
+<section class="section testimonials" id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="card">
+    <p>"QuickLoan helped me get a loan within 24 hours. Excellent service!"</p>
+    <strong>– Sarah M.</strong>
+  </div>
+  <div class="card">
+    <p>"The interest rates are the best I found. Highly recommended!"</p>
+    <strong>– James K.</strong>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 QuickLoan. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
