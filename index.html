@@ -4,18 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QuickLoan - Fast & Easy Loans</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
 <header>
   <h2>QuickLoan</h2>
   <nav>
+    <a href="#features">Features</a>
     <a href="#services">Services</a>
     <a href="#calculator">Calculator</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
+    <a href="https://m.me/quicklender" target="_blank">Messenger</a>
+    <a href="https://www.facebook.com/share/12M9FgGErgF/?mibextid=wwXIfr" target="_blank">Facebook</a>
   </nav>
 </header>
 
@@ -23,6 +27,48 @@
   <h1>Fast. Reliable. Loans.</h1>
   <p>Get instant loan approvals with low interest rates.</p>
   <button onclick="document.getElementById('contact').scrollIntoView()">Apply Now</button>
+</section>
+
+<!-- Feature Section -->
+<section class="section feature-icons" id="features">
+  <h2>Simple, Fast & Flexible</h2>
+  <p class="subtext">
+    Borrow from <strong>£5,000</strong> to <strong>£50,000</strong>. Fast funding. No hidden fees.
+  </p>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <i class="fas fa-bolt icon"></i>
+      <h3>Fast Funding</h3>
+      <p>Get approved and funded in as little as 24 hours.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-wallet icon"></i>
+      <h3>Flexible Amounts</h3>
+      <p>Choose from £5,000 to £50,000 based on your needs.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-thumbs-up icon"></i>
+      <h3>Easy Process</h3>
+      <p>Online application takes just minutes. No paperwork required.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="section stats" id="stats">
+  <div class="stat-box">
+    <h3><span class="counter" data-target="10000">0</span>+</h3>
+    <p>Customers Funded</p>
+  </div>
+  <div class="stat-box">
+    <h3><span class="counter" data-target="200000">0</span>+</h3>
+    <p>Loans Approved (£)</p>
+  </div>
+  <div class="stat-box">
+    <h3><span class="counter" data-target="98">0</span>%</h3>
+    <p>Approval Rate</p>
+  </div>
 </section>
 
 <section class="section services" id="services">
@@ -44,10 +90,11 @@
 <section class="section calculator" id="calculator">
   <h2>Loan Calculator</h2>
   <p>Estimate your monthly payments</p>
-  <input type="number" placeholder="Loan Amount ($)" />
-  <input type="number" placeholder="Interest Rate (%)" />
-  <input type="number" placeholder="Loan Term (Years)" />
-  <button>Calculate</button>
+  <input type="number" id="loanAmount" placeholder="Loan Amount (£)" />
+  <input type="number" id="interestRate" placeholder="Interest Rate (%)" />
+  <input type="number" id="loanTerm" placeholder="Loan Term (Years)" />
+  <button id="calcBtn">Calculate</button>
+  <div id="calcResult" class="result-box"></div>
 </section>
 
 <section class="section testimonials" id="testimonials">
@@ -60,16 +107,24 @@
     <p>"The interest rates are the best I found. Highly recommended!"</p>
     <strong>– James K.</strong>
   </div>
+<div class="card">
+  <p>“QuickLoan was a game changer for me. The process was simple and the money arrived the next day!”</p>
+   <strong>– Angela R.</strong>
+  </div>
 </section>
 
 <section class="section contact" id="contact">
   <h2>Contact Us</h2>
   <form>
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea rows="5" placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+
+  <div class="social-buttons">
+    <a href="https://m.me/quicklender" target="_blank">
+      <button class="messenger-btn">💬 On Messenger</button>
+    </a>
+    <a href="https://www.facebook.com/share/12M9FgGErgF/?mibextid=wwXIfr" target="_blank">
+      <button class="facebook-btn">👍 Visit Our Facebook</button>
+    </a>
+  </div>
 </section>
 
 <footer>
